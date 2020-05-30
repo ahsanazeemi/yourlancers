@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link href="https://kit-pro.fontawesome.com/releases/v5.13.0/css/pro.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="swiper.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+<style>
+    .mycontainer1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .pp-page{
+        padding: 20px;
+        width: 95%;
+        box-shadow: 1px 5px 10px gray;
+        border-radius: 20px;
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .pp-page h1{
+        color: brown;
+        margin: 15px 0px;
+    }
+    .pp-page p, .pp-page ul li{
+        font-size: 18px;
+        padding: 6px;
+    }
+</style>
+</head>
+<body>
+    <div class="mycontainer">
+        <div class="head">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html"><img src="logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Article Writing</a>
+                          <a class="dropdown-item" href="#">Graphics Designing</a>
+                          <a class="dropdown-item" href="#">Web Developement</a>
+                          <a class="dropdown-item" href="#">Youtube Subscribers</a>
+                          <a class="dropdown-item" href="#">Youtube Likes</a>
+                          <a class="dropdown-item" href="#">Youtube Watch Time</a>
+                          <a class="dropdown-item" href="#">Facebook Page Likes</a>
+                          <a class="dropdown-item" href="#">Rigster .COM Domain</a>
+                          <a class="dropdown-item" href="#">Photo Editing</a>
+                          <a class="dropdown-item" href="#">Tech Support</a>
+                          <a class="dropdown-item" href="#">Video Editing</a>
+                        </div>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="payment-policy.html"  >Payment Policy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html" id="ext1">Contact us</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+        <div class="mycontainer1">
+            <div class="pp-page">
+                <h1>Contact us:</h1>
+                <h2>Having trouble? Feel Free to contact us , We are available all 24 Hours. Just send your issue. We will help you within an hour.</h2>
+                <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                    <script type="text/javascript">
+                    function ValidateForm(frm) {
+                    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                    if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                    if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                    return true; }
+                    </script>
+                    <table style="max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+                    <tr> <td>
+                    <label for="Name">Name*:</label>
+                    </td> <td>
+                    <input name="Name" type="text" maxlength="60" style="width:100%;" />
+                    </td> </tr> <tr> <td>
+                    <label for="PhoneNumber">Phone number:</label>
+                    </td> <td>
+                    <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;" />
+                    </td> </tr> <tr> <td>
+                    <label for="FromEmailAddress">Email address*:</label>
+                    </td> <td>
+                    <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;" />
+                    </td> </tr> <tr> <td>
+                    <label for="Comments">Comments*:</label>
+                    </td> <td>
+                    <textarea name="Comments" rows="7" cols="40" style="width:100%;"></textarea>
+                    </td> </tr> <tr> <td>
+                    * - required fields
+                    </td> <td>
+                    <div ><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+                    <input name="skip_Submit" type="submit" value="Submit" />
+                    <script src="https://www.100forms.com/js/FORMKEY:GHRDRYQ2WPF7/SEND:ahsanazeemiofficial@gmail.com" type="text/javascript"></script>
+                    </td> </tr>
+                    </table>
+                    </form><br>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+              <div class="container6"   data-aos="fade-up"  data-aos-duration="1000">
+                  <div class="contact">
+                      <p>Head Office:<br>
+                         Noorani Masjid, Mujahid Colony, Ghaziabad, Orangi Town, Karachi, Pakistan</p>
+                          <p><i class="fad fa-globe"></i>&nbsp; yourlancers.com</p>
+                          <p><i class="fad fa-phone"></i>&nbsp; +92 318 1236267</p>
+                          <p><i class="fad fa-phone"></i>&nbsp;  +92 313 2291821 </p>
+                          <p><i class="fad fa-phone"></i>&nbsp; ahsanazeemiofficial@gmail.com </p>
+                          <p><i class="fad fa-envelope-open-text"></i>&nbsp; info@yourlancers.com</p>
+                          <p>&nbsp; Thanks for Visiting! </p>
+                  </div>
+                  <div class="links">
+                      <h1>Useful Links</h1>
+                      <a href="payment-policy.html">Payment Policy</a><br>
+                      <a href="privacy-policy.html">Privacy Policy</a><br>
+                      <a href="contact-us.html">Contact us</a><br>
+                      <a href="About.html">About</a><br>
+                  </div>
+                  <div class="social">
+                      <h1>Connect with us</h1>
+                      <div class="social-icons">
+                          <ul>
+                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                              <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="copyright">
+                  Copyright <i class="fad fa-copyright"></i> 2020 - <a href="index.html" >Yourlancers</a>
+              </div>
+          </footer>
+          </div>
+      </div>
+  </body>
+  <script src="swiper.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  </html></body>
+</html>
