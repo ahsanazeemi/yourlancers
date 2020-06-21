@@ -38,17 +38,17 @@ body{
 }
 .featured img{
     position: relative;
+    max-width: 100;
 }
 .imgtxt{
     width: 670px;
-    color: white;
+    color: black;
     position: absolute;
-    top: 30%;
-    left: 10%;
-    border: 1px solid white;
+    top: 25%;
+    left: 5%;
     padding: 10px;
     filter: drop-shadow(100px);
-    height: 350px;
+    height: 390px;
     animation-name: animate;
     animation-timing-function: linear;
     animation-duration: 500ms;
@@ -62,26 +62,26 @@ body{
 }
 .imgtxt h1{
     font-size: 70px;
-    text-shadow: 1px 5px 5px black;
     margin-bottom: 20px;
 }
 .imgtxt h2{
-    text-shadow: 1px 2px 3px black;
     margin-bottom: 30px;
 }
 .imgtxt a{
     text-decoration: none;
     background: transparent;
-    color: white;
+    color: black;
     margin: 10px 20px;
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 10px;
     display: inline-block;
+    border-radius: 10px;
 }
 .imgtxt a:hover{
     background:  linear-gradient(45deg, darkblue, dodgerblue);
     color: white;
     text-decoration: none;
+    border: none;
 }
 .mycontainer{
     width: 100%;
@@ -108,17 +108,19 @@ body{
     bottom: 15px;
 }
 .container2{
-    background-color: #f7b42c;
-    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);    
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
     margin: 0;
     padding: 10px;
     position: relative;
     bottom: 17px;
+    color: white !important;
 }
 .all{
     width: 87%;
     margin: 0 auto;
     text-align: center;
+    color: white !important;
 }
 .element{
     display: inline-block;
@@ -127,21 +129,23 @@ body{
     text-align: center;
     width: 29%;
     height: 197px;
+    color: white !important;
 
 }
 .element img {
     text-align: center;
     width: 70px;
+    color: white !important;
+    filter: invert();
 }
 .num{
     font-size: 40px;
     text-align: center;
-    color: black;
+
 }
 .status{
     font-size: 25px;
     text-align: center;
-    color: black;
 }
 .container3{
     background: whitesmoke;
@@ -182,17 +186,17 @@ body{
     font-size: 40px;
 }
 .review{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 .review h1{
     color: darkblue;
 }
 .one-rev{
-    width: 43%;
+    width: 46%;
     box-shadow: 1px 5px 10px gray;
-    padding: 15px;
+    padding: 35px;
     border-radius: 70px;
     margin: 20px;
     display: inline-block;
@@ -200,9 +204,10 @@ body{
     cursor: pointer;
 }
 .one-rev:hover{
-    position: relative;
-    bottom: 20px;
+    transform: rotateZ(3deg);
+    zoom: 110%;
 }
+
 .one-rev h1{
     display: inline-block;
     color: brown;
@@ -212,7 +217,7 @@ body{
     margin: 10px;
 }
 .one-rev p{
-    color: darkviolet;
+    color: darkblue;
 }
 .container6{
     width: 100%;
@@ -485,6 +490,29 @@ body{
 
 
 @media only screen and (max-width: 1000px) {
+    .imgtxt{
+        position: unset;
+        width: 100%;
+        color: white;
+        height: auto;
+    }
+    .imgtxt a{
+        color: white;
+        border: white 1px solid;
+    }
+    .featured{
+        height: auto;
+        box-shadow: 1px 5px 19px gray;
+        margin: 20px auto;
+        border-radius: 30px;
+        padding: 30px;
+        width: 90%;
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    }
+    .featured img{
+        display: none;
+    }
     .join{
         text-align: center;
     }
@@ -510,13 +538,6 @@ body{
         height: auto;
         width: 100%;
         margin: 20px 0px;
-    }
-    .imgtxt{
-        width: 100%;
-        left: 0;
-        height: auto;
-        overflow: hidden;
-        top: 20%;
     }
     .qualities{
         display: block;
@@ -552,6 +573,7 @@ body{
     }
 }
 @media only screen and (max-width: 746px) {
+    
     .featured img{
         display: none;
     }
@@ -569,20 +591,26 @@ body{
     }
     .one-rev h1{
         display: block;
-        margin: 5px auto;
+        margin: 10px auto;
+        font-size: 30px;
     }
     .imgtxt{
         position: unset;
         top: 10%;
-        background: url(./body.jpg);
     }
     .imgtxt h1{
-        font-size: 20px;
-        margin: 5px 0px;
+        font-size: 45px;
+        margin: 15px 0px;
+        text-align: center;
     }
     .imgtxt h2{
-        font-size: 15px;
-        margin: 5px 0px;
+        font-size: 25px;
+        margin: 15px 0px;
+        text-align: center;
+    }
+    .imgtxt a{
+        font-size: 12px;
+        margin: 5px 10px;
     }
     .contact{
         display: block;
